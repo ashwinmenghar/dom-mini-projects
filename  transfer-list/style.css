@@ -1,0 +1,30 @@
+header h1 {
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.transfer-list {
+  display: flex;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  border: 1px solid grey;
+  gap: 1rem;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  padding: 1rem;
+  flex-basis: 0;
+}
+
+.controls-box {
+  align-items: center;
+  max-width: 5rem;
+}

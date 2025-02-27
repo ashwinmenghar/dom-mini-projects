@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Transfer List</h1>
+    </header>
+    <div class="container">
+      <div class="transfer-list">
+        <section class="left-section">
+          <div class="">
+            <input type="checkbox" id="js" />
+            <label for="js">JS</label>
+          </div>
+          <div class="">
+            <input type="checkbox" id="html" />
+            <label for="html">HTML</label>
+          </div>
+          <div class="">
+            <input type="checkbox" id="css" />
+            <label for="css">CSS</label>
+          </div>
+          <div class="">
+            <input type="checkbox" id="ts" />
+            <label for="ts">TS</label>
+          </div>
+        </section>
+        <section class="controls-box">
+          <button class="move-all-left" title="move all left"><<</button>
+          <button class="move-to-left" title="move to left" disabled><</button>
+          <button class="move-to-right" title="move to right" disabled>
+            >
+          </button>
+          <button class="move-all-right" title="move all right">>></button>
+        </section>
+        <section class="right-section">
+          <div class="">
+            <input type="checkbox" id="react" />
+            <label for="react">React</label>
+          </div>
+          <div class="">
+            <input type="checkbox" id="angular" />
+            <label for="angular">Angular</label>
+          </div>
+          <div class="">
+            <input type="checkbox" id="vue" />
+            <label for="vue">Vue</label>
+          </div>
+          <div class="">
+            <input type="checkbox" id="svelte" />
+            <label for="svelte">Svelte</label>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
