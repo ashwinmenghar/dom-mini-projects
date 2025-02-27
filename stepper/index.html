@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stepper</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Stepper</h1>
+    </header>
+
+    <div class="container">
+      <div class="stepper">
+        <div class="step">
+          <div class="step-1 step-number active">
+            <!-- <span>&#10003;</span> -->
+            1
+          </div>
+          <p>Contact Details</p>
+        </div>
+        <div class="step">
+          <div class="step-2 step-number">
+            <!-- <span>&#10003;</span> -->
+            2
+          </div>
+          <p>Shipping Address</p>
+        </div>
+        <div class="step">
+          <div class="step-3 step-number">
+            <!-- <span>&#10003;</span> -->
+            3
+          </div>
+          <p>Payment</p>
+        </div>
+        <div class="step">
+          <div class="step-4 step-number">
+            <!-- <span>&#10003;</span> -->
+            4
+          </div>
+          <p>Delivered</p>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <div class="action-container">
+        <p class="action-message">
+          Add contact details for further communications.
+        </p>
+        <span>
+          <button class="btn" id="previous-btn" disabled>Previous</button>
+          <button class="btn" id="next-btn">Next</button>
+        </span>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
