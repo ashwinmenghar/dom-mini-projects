@@ -1,27 +1,6 @@
 const input = document.getElementById("input");
 const output = document.querySelector(".output");
-let allTodo = [
-  {
-    text: "1",
-    isDone: false,
-  },
-  {
-    text: "2",
-    isDone: false,
-  },
-  {
-    text: "3",
-    isDone: false,
-  },
-  {
-    text: "4",
-    isDone: false,
-  },
-  {
-    text: "5",
-    isDone: false,
-  },
-];
+let allTodos = [];
 
 const addTodo = (e) => {
   let value = e.target.value;
@@ -32,8 +11,8 @@ const addTodo = (e) => {
       isDone: false,
     };
 
-    allTodo.push(todo);
-    display(allTodo);
+    allTodos.push(todo);
+    display(allTodos);
     e.target.value = "";
   }
 };
@@ -66,13 +45,3 @@ const display = (todos) => {
 };
 
 input.addEventListener("keyup", addTodo);
-display(allTodo);
-
-output.addEventListener("click", (e) => {
-  if (e.target.id == "remove") {
-    let id = e.target.dataset.id;
-    delete allTodo[id];
-
-    console.log(allTodo);
-  }
-});
