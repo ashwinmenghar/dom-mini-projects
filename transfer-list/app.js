@@ -1,4 +1,3 @@
-// 7250
 const moveAllRightBtn = document.querySelector(".move-all-right");
 const moveAllLeftBtn = document.querySelector(".move-all-left");
 const moveToRightBtn = document.querySelector(".move-to-right");
@@ -13,7 +12,8 @@ const updateBtn = () => {
   const rightChecked = rightSection.querySelectorAll("div").length > 0;
 
   const leftIsEmpty = leftSection.querySelectorAll("input:checked").length > 0;
-  const rightIsEmpty = rightSection.querySelectorAll("input:checked").length > 0;
+  const rightIsEmpty =
+    rightSection.querySelectorAll("input:checked").length > 0;
 
   moveAllRightBtn.disabled = !leftChecked;
   moveAllLeftBtn.disabled = !rightChecked;
